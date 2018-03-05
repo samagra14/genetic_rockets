@@ -1,8 +1,8 @@
-function Population(){
+function Population(lifespan){
   this.rockets = [];
   this.size = 100;
   for (var i = 0; i <this.size; i++) {
-  this.rockets[i] = new Rocket();
+  this.rockets[i] = new Rocket(lifespan);
   }
 
   this.run = function(){

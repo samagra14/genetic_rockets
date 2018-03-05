@@ -1,7 +1,8 @@
 var population;
+var lifespan = 200;
 function setup(){
   createCanvas(window.innerWidth,window.innerHeight);
-  population = new Population();
+  population = new Population(lifespan);
 }
 
 

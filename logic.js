@@ -1,7 +1,11 @@
 var population;
-var lifespan = 200;
+var lifespan = 500;
 var count = 0;
 var target;
+var rx = window.innerWidth/4;
+var ry = 300;
+var rw = 650;
+var rh = 10;
 
 function setup(){
   createCanvas(window.innerWidth,window.innerHeight);
@@ -13,6 +17,8 @@ function setup(){
 function draw(){
   background(0);
   population.run();
+  rect(window.innerWidth/4,300,650,10);
+  fill(255);
   count++;
   if(count == lifespan){
     console.log("here");

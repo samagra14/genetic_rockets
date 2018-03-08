@@ -1,4 +1,7 @@
 ## Genetic Rockets
+
+<img src="demo.gif" data-canonical-src="resources/default_pattern_explained.jpg"/>
+
 >The fact that life evolved out of nearly nothing, some 10 billion years after the universe evolved out of literally nothing, is a fact so staggering that I would be mad to attempt words to do it justice.”</br>
 — Richard Dawkins
 
@@ -15,10 +18,6 @@ The genetic algorithm uses three main types of rules at each step to create the 
 
 * **Mutation rules** apply random changes to individual parents to form children.
 
-### Evolved steering patterns
-
-<img src="demo.gif" data-canonical-src="resources/default_pattern_explained.jpg"/>
-
 ### Todos
 
 1. Improve design. Add colors and stuff.
@@ -34,4 +33,4 @@ Just send a PR.
 
 * Daniel Shiffman's [Nature of Code](http://natureofcode.com/book/chapter-9-the-evolution-of-code/)
 * Wikipedia's [article](https://en.wikipedia.org/wiki/Genetic_algorithm) on genetic algorithms.
-*  Mathworks's [article](https://in.mathworks.com/discovery/genetic-algorithm.html) on genetic algorithms. 
+*  Mathworks's [article](https://in.mathworks.com/discovery/genetic-algorithm.html) on genetic algorithms.

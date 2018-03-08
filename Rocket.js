@@ -1,24 +1,44 @@
 
 
-function Rocket(lifespan){
+function Rocket(dna){
   this.pos = createVector(width/2,height);
   this.vel = createVector();
   this.acc = createVector();
-  this.dna = new DNA(lifespan);
-  this.count = 0;
+  if(dna){
+    this.dna = dna;
+  }
+  else {
+  this.dna = new DNA();
+}
+  this.fitness = 0.0;
+  this.completed = false;
 
   this.applyForce = function(force){
     this.acc.add(force);
   }
 
   this.update = function(){
-    this.applyForce(this.dna.genes[this.count]);
+    this.applyForce(this.dna.genes[count]);
     //console.log(this.dna.genes[this.count]);
     //console.log(this.count);
-    this.count++;
-    this.vel.add(this.acc);
-    this.pos.add(this.vel);
-    this.acc.mult(0);
+    var d = dist(this.pos.x,this.pos.y,target.x,target.y);
+    if(d<10){
+      this.completed = true;
+      this.pos = target.copy();
+    }
+    if(!this.completed){
+      this.vel.add(this.acc);
+      this.pos.add(this.vel);
+      this.acc.mult(0);
+    }
+  }
+
+  this.calcFitness = function(){
+    var d = dist(this.pos.x,this.pos.y,target.x,target.y);
+    this.fitness = map(d,0,width, width,0);
+    if(this.completed){
+      this.fitness*=10;
+    }
   }
 
   this.show = function(){

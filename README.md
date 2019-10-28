@@ -34,3 +34,5 @@ Just send a PR.
 * Daniel Shiffman's [Nature of Code](http://natureofcode.com/book/chapter-9-the-evolution-of-code/)
 * Wikipedia's [article](https://en.wikipedia.org/wiki/Genetic_algorithm) on genetic algorithms.
 *  Mathworks's [article](https://in.mathworks.com/discovery/genetic-algorithm.html) on genetic algorithms.
+
+This video was inspired entirely from Daniel Shiffman. 
